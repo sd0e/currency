@@ -1,0 +1,281 @@
+:root {
+    --header: #e0dac3;
+    --headerText: #585858;
+    --footer: #e0dac3;
+    --footerText: #585858;
+    --pageBackground: #f0ead3;
+    --innerElementBackground: #f0ead3;
+    --mainText: #000000;
+    --topText: #000000;
+    --generalLink: #817a7a;
+    --inputBackground: #ffffff;
+}
+
+* {
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+html {
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    overflow-x: hidden;
+    padding: 0px;
+    margin: 0px;
+}
+
+.headerLogo {
+    height: 50px;
+    margin-top: 10px;
+    margin-left: 10px;
+    mix-blend-mode: luminosity;
+}
+
+.head {
+    height: 70px;
+}
+
+.headerTitle {
+    line-height: 70px;
+    vertical-align: middle;
+    color: rgb(0, 255, 255); 
+    mix-blend-mode: exclusion;
+    font-size: 20px;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: -40px;
+    margin-left: 10px;
+}
+
+#page-container {
+    position: relative;
+    min-height: calc(100vh - 2px);
+}
+
+#content-wrap {
+    padding-bottom: 50px;
+}
+
+#footer {
+    height: 30px;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.footerText {
+    color: rgb(0, 255, 255); 
+    mix-blend-mode: exclusion;
+    display: inline-block;
+    line-height: 30px;
+    vertical-align: middle;
+}
+
+.material-icons.heart {
+    font-size: 17px;
+    display: inline-block;
+    line-height: 30px;
+    vertical-align: middle;
+}
+
+a {
+    position: relative;
+    text-decoration: none;
+    color: rgb(0, 255, 255); 
+    mix-blend-mode: difference;
+}
+
+a.title {
+    color: var(--topText);
+    position: relative;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a.flairLink {
+    color: #ffffff;
+    position: relative;
+    text-decoration: none;
+    font-size: 0.8rem;
+}
+
+a.flairLink::after {
+    border-radius: 1em;
+    border-top: .1em solid #ffffff;
+    content: "";
+    position: absolute;
+    right: 100%;
+    bottom: .01em;
+    left: 0;
+    transition: right .4s cubic-bezier(0,.5,0,1);
+    font-size: 1rem;
+}
+
+a.home {
+    color: var(--headerText);
+    position: relative;
+    text-decoration: none;
+    font-size: 0.8rem;
+}
+
+a.home::after {
+    border-radius: 1em;
+    border-top: .1em solid var(--headerText);
+    content: "";
+    position: absolute;
+    right: 100%;
+    bottom: -0.4em;
+    left: 0;
+    transition: right .4s cubic-bezier(0,.5,0,1);
+    font-size: 2rem;
+}
+
+a:hover::after {
+    right: 0;
+}
+
+.showcaseTitle {
+    font-weight: bold;
+    font-style: italic;
+}
+
+.flair {
+    color: white;
+    display: inline-block;
+    font-size: 0.8rem;
+    margin-bottom: 0.8rem;
+    padding: 0.3rem;
+    border-radius: 0.2rem;
+}
+
+.searchFlair {
+    background-color: #c73298;
+}
+
+.description {
+    display: inline-block;
+    margin-top: 0.8rem;
+    margin-bottom: 0.8rem;
+    color: rgb(0, 255, 255); 
+    mix-blend-mode: exclusion;
+    font-weight: bold;
+}
+
+.example {
+    display: inline-block;
+    color: var(--mainText);
+    margin-top: 1rem;
+}
+
+.browse {
+    width: calc(95vw - 2rem);
+    margin-left: 2.5vw;
+    margin-top: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 1rem;
+    border-radius: 0.5rem;
+    padding-bottom: 1rem;
+    color: var(--mainText);
+}
+
+.browseTitle {
+    font-size: 1.8rem;
+    color: var(--topText);
+}
+
+.subtitle {
+    display: inline-block;
+    font-weight: bold;
+    margin-top: 1.2rem;
+    color: var(--topText);
+    margin-bottom: 0.5rem;
+}
+
+.flairList {
+    color: white;
+    font-size: 0.8rem;
+    padding: 0.3rem;
+    border-radius: 0.2rem;
+}
+
+.right {
+    width: 50px;
+    height: 70px;
+    float: right;
+}
+
+.material-icons.home {
+    line-height: 70px;
+    vertical-align: middle;
+    color: var(--headerText);
+    font-size: 1.7rem;
+}
+
+.innerElement {
+    width: calc(95vw - 2rem);
+    margin-left: 2.5vw;
+    margin-top: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 1rem;
+    border-radius: 0.5rem;
+    padding-bottom: 1rem;
+}
+
+.topFlair {
+    color: white;
+    display: inline-block;
+    font-size: 0.8rem;
+    padding: 0.3rem;
+    border-radius: 0.2rem;
+}
+
+#searchBox {
+    background-color: var(--inputBackground);
+    border: none;
+    color: var(--mainText);
+    padding: 0.3rem;
+    width: 25rem;
+    font-size: 1rem;
+    border-radius: 0.5rem;
+    line-height: 20px;
+    vertical-align: middle;
+}
+
+.flairButton {
+    color: white;
+    display: inline-block;
+    font-size: 1rem;
+    padding: 0.3rem;
+    border-radius: 0.5rem;
+    line-height: 18px;
+    vertical-align: middle;
+}
+
+strong {
+    color: var(--mainText);
+}
+
+.contents {
+    color: var(--mainText);
+}
+
+.innerElement.currency {
+    text-align: center;
+    margin-top: 4rem;
+}
+
+.symbol {
+    font-size: 25rem;
+    font-weight: bold;
+    color: rgb(0, 255, 255); 
+    mix-blend-mode: exclusion;
+}
