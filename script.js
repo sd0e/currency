@@ -38,8 +38,7 @@ function adBlock() {
     alert("AdBlock blocks the requests to the currency code website. Please disable it if you want to access the website.")
 }
 
-$.getJSON('http://www.geoplugin.net/json.gp?jsoncallback=?', function(data) {
-    var symbol = data.geoplugin_currencySymbol_UTF8;
-    console.log(symbol);
-    $(".symbol").text(data.geoplugin_currencySymbol_UTF8);
+$.getJSON('https://json.geoiplookup.io/', function(data) {
+    var symbol = data.currency_code;
+    $(".symbol").text(symbol);
 });
